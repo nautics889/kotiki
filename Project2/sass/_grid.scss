@@ -1,0 +1,19 @@
+@mixin grid(
+$width: 960px,
+$gutter: 20px,
+$columns: 12
+) {
+$column_width: $width/$columns;
+    .grid {
+	display: inline;
+	margin-left: $gutter/2;
+	margin-right: $gutter/2;
+}
+
+	@for $i from 1 through $columns {
+	.grid_#{$i} {
+	    @extend .grid;
+	    width: $i * $column_width - $gutter;
+	}
+}
+}

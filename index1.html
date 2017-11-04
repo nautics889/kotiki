@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="fonts/baloo/stylesheet.css">
+	<link rel="stylesheet" href="fonts/tuffy/stylesheet.css">
+	<link rel="stylesheet" href="fonts/helsinki/stylesheet.css">
+	<style>
+		body {
+			background: #D4D8FF;
+		}
+		.main {
+			display: flex;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+
+			margin: 0 auto;
+
+			padding: 10px;
+
+			border: 0px solid black;
+
+			flex-flow: row wrap;
+
+			max-width: 1160px;
+
+			background: white;
+		}
+		.el {
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 3px;
+		}
+		.header {
+			background-image: url(images/header.jpg);
+			background-repeat: round;
+			flex-basis: 1140px;
+			height: 170px;
+			text-align: center;
+			font-family: baloo_daregular;
+			color: white;
+			text-shadow: -2px 3px 18px rgba(0, 0, 80, 1);
+			font-size: 38px;
+		}
+		.menu {
+			display: flex;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			background-image: url(images/header-background.jpg);
+			background-repeat: no-repeat;
+            justify-content: space-around;
+            flex-basis: 100%;
+            max-height: 90px;
+            border-color: white;
+   		}
+        .par {
+        	flex-basis: 140px;
+        	width: 140px;
+        	margin: 10px;
+        	flex: 1 1 200px;
+        	border: 0px;
+        	justify-content: space-around;
+
+        	text-align: center;
+        }
+        a.pages {
+        	color: #3A5E8F;
+        	transition: 1s;
+        	text-decoration: none;
+        	padding: 10px 18px; 
+        	font-family: tuffybold, arial;
+        	font-size: 18px;
+        	text-shadow: white 1px 1px 0, white -1px -1px 0, 
+            white -1px 1px 0, white 1px -1px 0;
+        }
+        a.pages:hover {
+        	background-image: url(images/bg.png);
+        	background-repeat: no-repeat;
+        	color: #008C03;
+        }
+        .side-bar {
+        	flex-basis: 18%;
+        	font-family: arial, helvetica;
+        	border: 1px solid #ddd;
+        	margin-left: 25px;
+        	background-image: url(images/sidebar-background.jpg);
+        	background-repeat: round;
+        	border-radius: 6px;
+        }
+        .loginin {
+        	display: flex;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+
+            flex-wrap: wrap;
+        }
+        .side-bar h4 {
+        	margin-left: 25px;
+        	font-family: tuffybold, arial;
+        	color: #223566;
+        }
+        .div-input-buttons {
+        	margin-top: 10px;
+        }
+        .input-buttons {
+            border: 0px;
+            font-family: tuffybold, arial;
+            color: #223566;
+            transition: 1s;
+            background-image: ;
+        }
+        .input-buttons:hover {
+        	color: #008C03;
+        	text-shadow: white 1px 1px 0, white -1px -1px 0, 
+            white -1px 1px 0, white 1px -1px 0;
+        }
+        .content {
+			display: flex;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+
+			margin-left: 10px;
+
+			padding-top: 0px;
+
+        	flex-basis: 70%;
+        	flex-wrap: wrap;
+
+        	justify-content: space-around;
+        }
+        .head-content {
+        	flex-basis: 100%;
+        	margin-bottom: 0px;
+        	max-height: 50px;
+        }
+        .head-content h2 {
+            font-family: tuffyregular, arial;
+            text-align: center;
+        }
+        .obj {
+        	margin-top: 0px;
+        	margin-bottom: 35px;
+        	flex-basis: 40%;
+        	border: 0px solid #ddd;
+        	border-radius: 3px;
+        	font-family: arial, helvetica;
+        	font-size: 15px;
+        	text-align: center;
+        	height: 400px;
+        }
+        .obj h4 {
+        	font-family: tuffybold, arial;
+        	text-align:  center;
+        }
+        .obj img {
+        	border: 1px solid #ddd;
+        	border-radius: 5px;
+        }
+        .obj a {
+        	background-color: #388EC4;
+        	padding: 5px 10px;
+        	border-radius: 3px;
+        	font-family: tuffybold;
+        	text-decoration: none;
+        	color: white;
+        }
+        .obj a:hover {
+        	background-color: #1900D6;
+        }
+        .outline-ref {
+        	margin-left: 0;
+        	font-family: tuffybold;
+        }
+        .outline-ref a {
+            font-size: 13px;
+            text-decoration: none;
+            color: #223566;
+        }
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="el header">
+			<h1>Fluffy's fan-site</h1>
+		</div>
+		<div class="el menu">
+			<div class="el par" ">
+				<a href="#" class="pages" style="border-bottom: 3px solid #ddd">Главная</a>
+			</div>
+			<div class="el par">
+				<a href="index.html" class="pages">Галерея котиков</a>
+			</div>
+			<div class="el par">
+				<a href="#" class="pages" style="padding: 12px;">Форум</a>
+			</div>
+		</div>
+		<div class="el side-bar">
+		    <h4>Авторизация:</h4>
+			<div class="loginin">
+				<form action="">
+					<span style="font-size: 15px; font-family: tuffybold, arial; color: #223566;">Логин:</span>
+					<input type="text" name="username" style="border-radius: 3px; border-color: #99C8EC;">
+					<span style="font-size: 15px; font-family: tuffybold, arial; color: #223566;">Пароль:</span>
+					<input type="password" name="pswrd" style="border-radius: 3px; border-color: #99C8EC;">
+					<div class="div-input-buttons">
+						<button type="submit" name="sumbit" class="input-buttons" style="padding-left: 19px; padding-right: 19px; background-color: #4FB3DD; border-radius: 2px">Войти</button>
+						<button type="reg" name="reg" class="input-buttons" style="background-color: #4FB3DD; border-radius: 2px">Регистрация</button>
+					</div>
+				</form>
+			</div>
+			<div class="outline-ref">
+				<h4 style="margin-left: 0; margin-top: 140px; font-size: 19px">Ещё больше котиков...</h4>
+				<h4 style="margin-left: 5px">Вконтакте:</h4>
+                <ul>
+                	<li style="margin-bottom: 10px;"><a href="https://vk.com/tishtotamdelaesh">Коты в необычных местах</a></li>
+                	<li style="margin-bottom: 10px;"><a href="https://vk.com/loaf_cat">Буханка котика</a></li>
+                	<li style="margin-bottom: 10px;"><a href="https://vk.com/kittyhunter">Охотник на котиков</a></li>
+                </ul>
+                <h4 style="margin-left: 5px">В инстаграме:</h4>
+                <ul>
+                	<li style="margin-bottom: 10px;"><a href="https://www.instagram.com/hosico_cat/">hosico-cat</a></li>
+                	<li style="margin-bottom: 10px;"><a href="https://www.instagram.com/kisya615/">kisya615</a></li>
+                </ul>
+			</div>
+
+		</div>
+		<div class="main el content">
+			<div class="head-content">
+				<h2>Читать о котиках...</h2>
+			</div>
+			<div class="obj">
+			    <img src="images/siberian-cat.jpg" alt="siberian-cat" style="margin-left: 0">
+				<h4>Сибирский лесной кот</h4>
+				<p>Сибирская кошка известна своей необыкновенной, но довольно классической внешностью домашнего кота...</p>
+			    <a href="#">Читать...</a>
+			</div>
+			<div class="obj">
+				<img src="images/norv-forest-cat.jpg" alt="norv-forest-cat">
+				<h4>Норвежский лесной кот</h4>
+				<p>Порода норвежских лесных котов относится к длинношерстым. Их напрямую связана с суровым зимним климатом Норвегии.</p>
+				<a href="#">Читать...</a>
+			</div>
+			<div class="obj">
+				<img src="images/mein-kun.jpg" alt="mein-kun">
+				<h4>Мейн-кун</h4>
+				<p>Мейн-кун одна из древних пород Америки. Коты этой породы отличаются дружелюбным характером и особо крупным размером.</p>
+				<a href="#">Читать...</a>
+			</div>
+			<div class="obj">
+				<img src="images/british-cat.jpg" alt="british-cat">
+				<h4>Британский кот</h4>
+				<p>Британцы — короткошёрстные, как правило, это сильные, умные, крепкие коты. Бывают от средних до крупных размеров.</p>
+				<a href="#">Читать...</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
